@@ -2,6 +2,11 @@ const app = new Vue ({
   el: '#app',
   data: {
     keyword: "totality",
-    toggle1: true
+    onOff: true
+  },
+  methods: {
+    toggleOnOff() {
+      this.onOff = !this.onOff;
+    }
   }
 });

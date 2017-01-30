@@ -7,13 +7,15 @@
 </head>
 <body>
     <div id="app">
-      {{toggle1}}
-      <button v-on:click = "toggle1 = !toggle1">Toggle</button>
-      <!--@ is shorthand for v-on:, which is how each listener will be set-->
-      <button @click = "alert(keyword)">Click</button>
+      {{onOff}}
+      <button v-on:click = "toggleOnOff()">Toggle</button>
       <!--{{Math.random()}}-->
       <!-- alternate method -->
       <!-- <p v-text="keyword"></p> -->
+      <div v-if="onOff">IF</div>
+      <div v-else>ELSE</div>
+      <!--@ is shorthand for v-on:, which is how each listener will be set-->
+      <button @click = "alert(keyword)">Click</button>
     </div>
 
     <!--old way-->
@@ -21,7 +23,7 @@
 
     <!--<script>-->
       <!--clickFunction = function(){-->
-        <!--alert("fkal;djals;fjal;fdkjalsdf");-->
+        <!--alert("This is the old way.");-->
       <!--}-->
     <!--</script>-->
   
