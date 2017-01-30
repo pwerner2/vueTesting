@@ -1,0 +1,12 @@
+{
+  "name": "vueTesting",
+  "version": "1.0.0",
+  "description": "testing vue",
+  "main": "index.js",
+  "repository": "git@github.com:pwerner2/vueTesting.git",
+  "author": "<pwerner2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.1.10"
+  }
+}

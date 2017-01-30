@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Testing</title>
+</head>
+<body>
+    <div id="app">
+      {{toggle1}}
+      <button v-on:click = "toggle1 = !toggle1">Toggle</button>
+      <!--@ is shorthand for v-on:, which is how each listener will be set-->
+      <button @click = "alert(keyword)">Click</button>
+      <!--{{Math.random()}}-->
+      <!-- alternate method -->
+      <!-- <p v-text="keyword"></p> -->
+    </div>
+
+    <!--old way-->
+    <!--<button id="buttonClicker" onclick="clickFunction()">Toggle</button>-->
+
+    <!--<script>-->
+      <!--clickFunction = function(){-->
+        <!--alert("fkal;djals;fjal;fdkjalsdf");-->
+      <!--}-->
+    <!--</script>-->
+  
+   <script src="node_modules/vue/dist/vue.min.js"></script>
+   <script src="main.js"></script>
+</body>
+</html>
