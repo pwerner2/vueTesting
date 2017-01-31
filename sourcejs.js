@@ -1,7 +1,7 @@
 const app = new Vue ({
   el: '#app',
   data: {
-    keyword: "totality",
+    keyword: "blue",
     onOff: true,
   },
   methods: {
