@@ -2,20 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Testing</title>
 </head>
 <body>
     <div id="app">
-      {{onOff}}
+      <div class="box" v-bind:style="styleObj"></div>
+      <!--two ways to style-->
+      <!--<div class="box" v-bind:style="{backgroundColor: '#333'}"></div>-->
       <button v-on:click = "toggleOnOff()">Toggle</button>
-      <!--{{Math.random()}}-->
-      <!-- alternate method -->
-      <!-- <p v-text="keyword"></p> -->
-      <div v-if="onOff">IF</div>
-      <div v-else>ELSE</div>
-      <!--@ is shorthand for v-on:, which is how each listener will be set-->
-      <button @click = "alert(keyword)">Click</button>
     </div>
 
     <!--old way-->
