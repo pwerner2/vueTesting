@@ -2,10 +2,7 @@ const app = new Vue({
   el: '#app',
   data: {
     keyword: "totality",
-    onOff: true,
-    styleObj: {
-      backgroundColor: '#333'
-    }
+    onOff: true
   },
   methods: {
     toggleOnOff() {

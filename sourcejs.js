@@ -3,9 +3,6 @@ const app = new Vue ({
   data: {
     keyword: "totality",
     onOff: true,
-    styleObj: {
-      backgroundColor: '#333'
-    }
   },
   methods: {
     toggleOnOff() {

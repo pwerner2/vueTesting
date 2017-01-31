@@ -7,22 +7,14 @@
     <title>Testing</title>
 </head>
 <body>
+
     <div id="app">
-      <div class="box" v-bind:style="styleObj"></div>
-      <!--two ways to style-->
-      <!--<div class="box" v-bind:style="{backgroundColor: '#333'}"></div>-->
+      <!--<div class="box" v-bind:style="{backgroundColor: 'green'}"></div>-->
+      <div class="box" v-bind:class="{ green: onOff }"></div>
+      <!--the above class (green) is a css class, defined in our stylesheet-->
       <button v-on:click = "toggleOnOff()">Toggle</button>
     </div>
 
-    <!--old way-->
-    <!--<button id="buttonClicker" onclick="clickFunction()">Toggle</button>-->
-
-    <!--<script>-->
-      <!--clickFunction = function(){-->
-        <!--alert("This is the old way.");-->
-      <!--}-->
-    <!--</script>-->
-  
    <script src="node_modules/vue/dist/vue.min.js"></script>
    <script src="main.js"></script>
 </body>
