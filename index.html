@@ -9,8 +9,22 @@
 <body>
 
     <div id="app">
-        <input type="text" v-model="keyword"> <!--{{keyword}}-->
-      <div class="box" v-bind:style="{backgroundColor: keyword}"></div>
+        <div class="search-wrapper">
+            <input type="text" v-model="keyword" placeholder="Search items...">
+            <label>Search Title: {{keyword}}</label>
+        </div>
+        <div class="wrapper">
+            <div class="card" v-for="post in filteredList">
+                <a v-bind:href="post.link" target="_blank">
+                    <img v-bind:src="post.img" alt="">
+                    {{post.title}}
+                    <small>Posted by {{post.author}}</small>
+                </a>
+            </div>
+            <!--<div v-for="post in postList"></div>-->
+            <!--anything entered between the above div will be looped for each item in array!-->
+            <!--entering a defined variable, like this: {{post.title}} will return the titles of all items in array-->
+        </div>
     </div>
 
    <script src="node_modules/vue/dist/vue.min.js"></script>
