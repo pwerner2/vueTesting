@@ -10,7 +10,7 @@
 
     <div id="app">
       <!--<div class="box" v-bind:style="{backgroundColor: 'green'}"></div>-->
-      <div class="box" v-bind:class="{ green: onOff }"></div>
+      <div class="box" v-bind:class="{ green: onOff, hotpink: !onOff }"></div>
       <!--the above class (green) is a css class, defined in our stylesheet-->
       <button v-on:click = "toggleOnOff()">Toggle</button>
     </div>
